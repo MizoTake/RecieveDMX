@@ -4,4 +4,3 @@
 
 [node name="DMXReciever" type="Node"]
 script = ExtResource("1_ls6n3")
-universe = 8
