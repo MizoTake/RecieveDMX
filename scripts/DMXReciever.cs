@@ -2,7 +2,8 @@ using System;
 using System.Net;
 using System.Text;
 using Godot;
-using GodotProject.scripts;
+
+namespace GodotProject.scripts;
 
 public partial class DMXReciever : Node
 {
