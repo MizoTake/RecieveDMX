@@ -17,8 +17,8 @@ public class CaptureArtNetSignal : IDisposable
     private readonly ArtNetSocket socket = new (UId.Empty);
     private byte[] dmxData;
 
-    public delegate void NotifyNewPacket(in byte[] signals);
-    public event NotifyNewPacket OnNotifySignals;
+    public delegate void NotifySignals(in byte[] signals);
+    public event NotifySignals OnNotifySignals;
     
     public CaptureArtNetSignal(IPAddress ipAddress, IPAddress subnetMaskAddress, uint universe)
     {
